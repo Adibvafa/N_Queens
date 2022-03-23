@@ -19,7 +19,7 @@ Maximum conflicts = 1 + 2 + ... + N-1 = (N-1 × N) / 2
 
 Since the algorithms are doing ascending search, the evaluation score of each board is thus:
 
-Maximum conflicts - Total current conflict pairs
+Evaluation Score = Maximum conflicts - Total current conflict pairs
 
 At last, the program ends when the maximum evaluation score (which is just the number of Maximum conflicts) is reached. Since the algorithms might stuck in local optimum, if the global optimum is not found, the program ends after 1000 iterations and returns the result.
 
