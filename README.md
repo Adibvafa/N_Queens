@@ -1,4 +1,4 @@
-# Solving N_Queens Problem Using Various Algorithms in Python
+# Solving N_Queens Using Various Algorithms in Python
 
 The N_Queens problem is a classic problem that lends itself for local search algorithms. In this problem, N queens are placed on an N × N chessboard, one queen per column. We assume that each queen can only move vertically (Up or Down) within her column of residence. 
 You can find more information about the problem in this [Wikipedia article](https://en.wikipedia.org/wiki/Eight_queens_puzzle). An example solution for 8 x 8 chessboard is shown:
