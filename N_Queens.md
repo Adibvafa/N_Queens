@@ -21,7 +21,7 @@ Since the algorithms are doing ascending search, the evaluation score of each bo
 
 Evaluation Score = Maximum conflicts - Total current conflict pairs
 
-At last, the program ends when the maximum evaluation score (which is just the number of Maximum conflicts) is reached. Since the algorithms might stuck in local optimum, if the global optimum is not found, the program ends after 1000 iterations and returns the result.
+At last, the program ends when the maximum evaluation score (which is just the number of Maximum conflicts) is reached. Since the algorithms might stuck in local optimum, if the global optimum is not found, the program ends after 1000 iterations. Afterwards, the resulting board, evaluation score and a graph demonstrating evaluation score dduring iterations is shown.
 
 
 ## Random Search
@@ -54,8 +54,7 @@ This algorithm is not efficient and has a high order time complexity. Furthermor
 
 This algorithm is an add-on to Hill Climbing to decrease the chance of getting stuck in local optimums. On each iteration, with a constant probaility of 23%, instead of following hill climbing, 2 random queens are chosen and are moved to random rows. This subtle change enables the algorithm to "shake" iself once in a while and hopefully avoid some local optimums.
 
-The reason behind 23% probabilty and 2 random queens is discussed as below:
-
+The reason behind 23% probabilty and 2 random queens is discussed in Discussion file.
 
 
 ## Hill Climbing + Changing Random Probability
@@ -69,7 +68,8 @@ This algorithm is an add-on to Hill Climbing to decrease the chance of getting s
 
 In another attempt, the algorithm is changed inorder to avoid local optimums. This algorithm has memory, that is, it stored the evaluation score of the previous board and the current board. If these two scores are equal, it means the algorithm is stuck in local optimum and thus instead of following hill climbing, 4 random queens are chosen and are moved to random rows. This modification enables the algorithm to move randomly to another state hen stuck in local optimim
 
-The reason behing 4 random queens is discussed as below:
+The reason behing 4 random queens is discussed in Discussion file.
+
 
 ## Genetics Algorithm
 
