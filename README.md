@@ -29,9 +29,9 @@ At last, the program ends when the maximum evaluation score (which is just the n
 In a random algorithm, on each iteration, the queen of each column is placed in a random row. The success rate of this algorithm is quite low, especially if N is large.
 
 
-## Optimised Random Search
+## Optimized Random Search
 
-In this algorithm, on each iteration, a new board is copied from the original, in which the queen of each column is placed in a random row. Only if the evaluation score of this new board is higher than the original board, the changes of the new board are applied to the original board.
+In this algorithm, on each iteration, the queen of each column is placed in a random row. In this for loop, if the relocated queen decreases the evaluation score, the row number of the queen in that particular column is restored back to the previous row number. We might end up moving a queen into another row with the evaluation score remaining the same. This way, we are able to change the board without decreasing the score and possibly make way for other changes that can increase evluation score further. If the algorithm is stuck at local optimum, this subtle move could be a determining factor to avoid local optimum. In a graphical view, this move is like jumping from the top of local hill to hillside of another hill in the same height (Evaluation Score)!
 
 
 ## Simulated Annealing
