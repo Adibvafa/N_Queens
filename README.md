@@ -64,22 +64,8 @@ This algorithm is an add-on to Hill Climbing to decrease the chance of getting s
 <img src='https://user-images.githubusercontent.com/90617686/159782039-d45197cc-1b9b-4a5e-a2c6-72cdb93d59a4.png' width="200" height="50"/>
 
 
-## Optimised Hill Climbing
+## Optimized Hill Climbing
 
 In another attempt, the algorithm is changed to avoid local optimums. This algorithm has memory, that is, it stored the evaluation score of the previous board and the current board. If these two scores are equal, it means the algorithm is stuck in local optimum, and thus instead of following hill climbing, 4 random queens are chosen and are moved to random rows. This modification enables the algorithm to move randomly to another state when stuck in local optimum
 
 The reason behind 4 random queens is discussed in the Discussion file.
-
-
-## Genetics Algorithm
-
-
-
-
-
-
-
-
-
-
-
