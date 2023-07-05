@@ -3,6 +3,8 @@
 The N_Queens problem is a classic problem that lends itself to local search algorithms. In this problem, N queens are placed on an N × N chessboard, one queen per column. We assume that each queen can only move vertically (Up or Down) within her residence column. 
 You can find more information about the problem in this [Wikipedia article](https://en.wikipedia.org/wiki/Eight_queens_puzzle). An example solution for an 8 x 8 chessboard is shown:
 
+*** **Check out the Discussion.md as it is referenced here.** ***
+
 ![image](https://user-images.githubusercontent.com/90617686/159763749-91840b80-e77f-4937-9cbd-0cdfd19f316d.png)
 
 
